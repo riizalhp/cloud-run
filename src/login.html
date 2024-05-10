@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Yuk Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* Membuat konten menjadi berkolom */
+        }
+        .login-container {
+            text-align: center; /* Membuat teks berada di tengah */
+            margin-bottom: 20px; /* Memberikan jarak antara teks dan form */
+        }
+        form {
+            width: 300px; /* Sesuaikan lebar formulir sesuai kebutuhan Anda */
+        }
+        form table {
+            width: 100%;
+        }
+        form table tr td {
+            padding: 5px;
+        }
+        form input[type="text"],
+        form input[type="password"],
+        form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        form input[type="submit"] {
+            background-color: #6495ED;
+            color: white;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #4169E1;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Di Sini</h2>
+    </div>
+    <form method="POST" action="cek_login.php">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" name="username" placeholder="Masukkan username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="password" placeholder="Masukkan password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" name="Login"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
